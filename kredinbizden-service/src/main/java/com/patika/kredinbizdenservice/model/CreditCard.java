@@ -14,6 +14,12 @@ public class CreditCard implements Product{
         this.campaignList = campaignList;
     }
 
+    public CreditCard(BigDecimal fee, Bank bank) {
+        this.fee = fee;
+        this.bank = bank;
+    }
+
+
     public BigDecimal getFee() {
         return fee;
     }
@@ -43,7 +49,7 @@ public class CreditCard implements Product{
         return "CreditCard{" +
                 "fee=" + fee +
                 ", campaignList=" + campaignList +
-                ", bank=" + bank +
+                ", bankName=" + bank.getName() +
                 '}';
     }
 }

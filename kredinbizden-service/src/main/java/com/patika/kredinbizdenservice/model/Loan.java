@@ -60,7 +60,7 @@ public abstract class Loan implements Product {
         return "Loan{" +
                 "amount=" + amount +
                 ", installment=" + installment +
-                ", bank=" + bank +
+                ", bankName=" + bank.getName() +
                 ", interestRate=" + interestRate +
                 '}';
     }

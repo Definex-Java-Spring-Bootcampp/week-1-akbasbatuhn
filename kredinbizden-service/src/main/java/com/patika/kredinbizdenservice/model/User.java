@@ -96,4 +96,16 @@ public class User {
     public void setApplicationList(List<Application> applicationList) {
         this.applicationList = applicationList;
     }
+
+    @Override
+    public String toString() {
+        return "User {" +
+                "name='" + name + '\'' +
+                ", surname=" + surname +
+                ", birthDay=" + birthDate +
+                ", email=" + email +
+                ", phoneNumber=" + phoneNumber +
+                ", isActive=" + isActive +
+                "}";
+    }
 }
